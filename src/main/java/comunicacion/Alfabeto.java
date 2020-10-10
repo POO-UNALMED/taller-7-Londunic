@@ -37,7 +37,7 @@ public class Alfabeto extends Pictograma{
 				aux+=a;
 			}
 			else{
-				aux+=a+" , ";
+				aux+=a+", ";
 				c+=1;
 			}
 		}
