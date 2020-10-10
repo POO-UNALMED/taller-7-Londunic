@@ -11,7 +11,7 @@ public class Tesis extends Escrito{
 			String referencias, String interpretacion) {
 		super(origen, titulo, autor, paginas);
 		this.idea = idea;
-		Tesis.argumentos=l;
+		argumentos=l;
 		this.conclusion = conclusion;
 		this.referencias = referencias;
 		this.interpretacion = interpretacion;
@@ -57,10 +57,11 @@ public class Tesis extends Escrito{
 				getAutor()+"\n"+
 				getPaginas()+"\n"+
 				idea+"\n"+
-				argumentos+"\n"+
+				argumentos.length+"\n"+
 				conclusion+"\n"+
 				referencias;
 	}
+	
 	public int palabrasTotales(int palabrasPagina) {
 		return getPaginas()*palabrasPagina*5;
 	}

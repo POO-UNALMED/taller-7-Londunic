@@ -30,12 +30,11 @@ public class Alfabeto extends Pictograma{
 		 return interpretacion;
 	 }
 	public String toString() {
-		String aux=null;
+		String aux="";
 		int c=0;
 		for (String a : letras) {
-			if(c==letras.length) {
+			if(c==letras.length-1) {
 				aux+=a;
-				c+=1;
 			}
 			else{
 				aux+=a+" , ";
@@ -47,7 +46,5 @@ public class Alfabeto extends Pictograma{
 	public static int cantidadLetras() {
 		return letras.length;
 	}
-
-	
 	
 }
